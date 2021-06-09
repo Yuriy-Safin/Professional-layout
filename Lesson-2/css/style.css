@@ -91,7 +91,7 @@ text-decoration: none;
   
   .search-btn {
     border: none;
-    background-image: url('../img/find.png');
+    background-image: url('../img/find.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-color: #222222;
@@ -177,9 +177,11 @@ text-decoration: none;
     justify-content: center;
     width: 360px;
     height: 260px;
-    position: relative;
     
-    
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/for-women.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
 .test__card2 {
@@ -188,7 +190,10 @@ text-decoration: none;
     justify-content: center;
     width: 360px;
     height: 260px;
-    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/for-men.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
     
 }
 
@@ -198,7 +203,10 @@ text-decoration: none;
     justify-content: center;
     width: 360px;
     height: 260px;
-    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/for-kids.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
     
 }
 
@@ -211,13 +219,17 @@ text-decoration: none;
     margin-top: 30px;
     width: 100%;
     height: 180px;
-    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/accesories.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
 
+/*Старое решение при использовании img а не background
 .card__img {
     width: 100%;
     filter: brightness(30%);
-}
+}*/
 
 
 .test__white {
@@ -528,44 +540,43 @@ a.main_button {
     margin-top: 24px;
 }
 
-.facebook {
+.social__box {
     width: 32px;
     height: 32px;
+    margin-right: 7px;
     background-color: #FFFFFF;
-    background-image: url('../img/facebook.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #000;
+    
+}
+
+.social__icon:hover {
+    background-color: #F16D7F;
+    fill: #FFFFFF;
+}
+
+.facebook {
+    padding: 8.5px 11.5px 8.5px 11.5px;
 }
 
 .insta {
-    width: 32px;
-    height: 32px;
-    background-color: #FFFFFF;
-    background-image: url('../img/insta.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 7px;
+    padding: 8.5px 8px 8.5px 8px;
 }
 
-.pinterest {
-    width: 32px;
-    height: 32px;
-    background-color: #FFFFFF;
-    background-image: url('../img/pinterest.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 7px;
+.priterest {
+    padding: 8px 9.5px 8px 9.5px;
 }
 
 .twitter {
-    width: 32px;
-    height: 32px;
-    background-color: #FFFFFF;
-    background-image: url('../img/twitter.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 7px;
+    padding: 9px 7.5px 9px 7.5px;
 }
 
 .breadcrumbs {
